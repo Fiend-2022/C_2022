@@ -5,7 +5,7 @@ void swap(char* c1, char* c2, int width)
 {
 	char temp = 0;
 	int i = 0;
-	//°´×Ö·û´óĞ¡Öğ¸ö½»»»
+	//æŒ‰å­—ç¬¦å¤§å°é€ä¸ªäº¤æ¢
 	for (i = 0; i < width; i++)
 	{
 		temp = *c1;
@@ -23,9 +23,9 @@ void my_sort(void* base, int sz, int width, int (*cmp)(const void* e1, const voi
 	{
 		for (j = 0; j < sz - 1 - i; j++)
 		{
-			if(cmp > 0)
+			if(cmp > 0)//è¿™é‡Œæœ‰é—®é¢˜ï¼Œæ²¡æœ‰è°ƒå‚æ•°
 			{
-				//´«²ÎÁ½¸öÔªËØµÄµØÖ·ºÍ×Ö½Ú´óĞ¡
+				//ä¼ å‚ä¸¤ä¸ªå…ƒç´ çš„åœ°å€å’Œå­—èŠ‚å¤§å°
 				swap((char*)base + j*width, (char*)base + (j + 1)*width, width);
 			}
 		}
